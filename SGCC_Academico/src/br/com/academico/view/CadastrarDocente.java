@@ -55,6 +55,10 @@ public class CadastrarDocente extends javax.swing.JInternalFrame {
         jSpinnerEstado = new javax.swing.JSpinner();
         jButtonSalvar = new javax.swing.JButton();
         jButtonFechar = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jTextField2 = new javax.swing.JTextField();
 
         setClosable(true);
         setIconifiable(true);
@@ -96,7 +100,7 @@ public class CadastrarDocente extends javax.swing.JInternalFrame {
         jRadioButtonFemenino.setText("Femenino");
         getContentPane().add(jRadioButtonFemenino, new org.netbeans.lib.awtextra.AbsoluteConstraints(166, 218, -1, -1));
 
-        jLabelEndereco.setText("Endereço:");
+        jLabelEndereco.setText("Logradouro");
         getContentPane().add(jLabelEndereco, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 245, -1, -1));
 
         jTextFieldEndereco.addActionListener(new java.awt.event.ActionListener() {
@@ -107,44 +111,44 @@ public class CadastrarDocente extends javax.swing.JInternalFrame {
         getContentPane().add(jTextFieldEndereco, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 265, 200, -1));
 
         jLabelEstado.setText("Estado:");
-        getContentPane().add(jLabelEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 291, -1, -1));
+        getContentPane().add(jLabelEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 350, -1, -1));
 
         jLabelCidade.setText("Cidade:");
-        getContentPane().add(jLabelCidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(106, 291, -1, -1));
+        getContentPane().add(jLabelCidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 350, -1, -1));
 
         jSpinnerCidade.setModel(new javax.swing.SpinnerListModel(new String[] {"Selecione", "Salvador", "Lauro de Freitas", "Feira de Santana", "Ilhéus", "Macaúbas"}));
-        getContentPane().add(jSpinnerCidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(106, 310, 131, -1));
+        getContentPane().add(jSpinnerCidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 370, 131, -1));
 
         jLabelTelefone.setText("Telefone:");
-        getContentPane().add(jLabelTelefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, -1, -1));
+        getContentPane().add(jLabelTelefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 60, -1, -1));
 
         jFormattedTextFieldTelefone.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jFormattedTextFieldTelefoneActionPerformed(evt);
             }
         });
-        getContentPane().add(jFormattedTextFieldTelefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 365, 200, -1));
+        getContentPane().add(jFormattedTextFieldTelefone, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 80, 200, -1));
 
         jLabelUsuario.setText("Criar usuário:");
-        getContentPane().add(jLabelUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(444, 38, -1, -1));
+        getContentPane().add(jLabelUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 130, -1, -1));
 
         jTextFieldUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldUsuarioActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextFieldUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(444, 58, 216, -1));
+        getContentPane().add(jTextFieldUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 150, 216, -1));
 
         jLabelSenha.setText("Senha:");
-        getContentPane().add(jLabelSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(444, 84, -1, -1));
+        getContentPane().add(jLabelSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 170, -1, -1));
 
         jLabelComfirmarSenha.setText("Confirmar Senha:");
-        getContentPane().add(jLabelComfirmarSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 84, -1, -1));
-        getContentPane().add(jPasswordFieldSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(444, 110, 90, -1));
-        getContentPane().add(jPasswordFieldConfirmaSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 110, 90, -1));
+        getContentPane().add(jLabelComfirmarSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 170, -1, -1));
+        getContentPane().add(jPasswordFieldSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 200, 90, -1));
+        getContentPane().add(jPasswordFieldConfirmaSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 200, 90, -1));
 
         jSpinnerEstado.setModel(new javax.swing.SpinnerListModel(new String[] {"--", "AC", "AM", "BA", "CE", "DF", "ES", "GO", "SP"}));
-        getContentPane().add(jSpinnerEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 50, -1));
+        getContentPane().add(jSpinnerEstado, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 370, 50, -1));
 
         jButtonSalvar.setText("Salvar");
         jButtonSalvar.addActionListener(new java.awt.event.ActionListener() {
@@ -152,10 +156,18 @@ public class CadastrarDocente extends javax.swing.JInternalFrame {
                 jButtonSalvarActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(444, 190, -1, -1));
+        getContentPane().add(jButtonSalvar, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 280, -1, -1));
 
         jButtonFechar.setText("Fechar");
-        getContentPane().add(jButtonFechar, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 190, -1, -1));
+        getContentPane().add(jButtonFechar, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 280, -1, -1));
+
+        jLabel1.setText("Bairro:");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, -1));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 140, -1));
+
+        jLabel2.setText("Nr°:");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 290, -1, -1));
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 320, 30, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -213,6 +225,8 @@ public class CadastrarDocente extends javax.swing.JInternalFrame {
     private com.toedter.calendar.JDateChooser jDateChooserNascimento;
     private javax.swing.JFormattedTextField jFormattedTextFieldCPF;
     private javax.swing.JFormattedTextField jFormattedTextFieldTelefone;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabelCPF;
     private javax.swing.JLabel jLabelCidade;
     private javax.swing.JLabel jLabelComfirmarSenha;
@@ -230,6 +244,8 @@ public class CadastrarDocente extends javax.swing.JInternalFrame {
     private javax.swing.JRadioButton jRadioButtonMasculino;
     private javax.swing.JSpinner jSpinnerCidade;
     private javax.swing.JSpinner jSpinnerEstado;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextFieldEndereco;
     private javax.swing.JTextField jTextFieldNomeCompleto;
     private javax.swing.JTextField jTextFieldUsuario;
