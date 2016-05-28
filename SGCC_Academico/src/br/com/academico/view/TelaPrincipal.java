@@ -30,22 +30,22 @@ public class TelaPrincipal extends javax.swing.JFrame {
 
         AreaPrincipal = new javax.swing.JDesktopPane();
         jLabelLogo = new javax.swing.JLabel();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
+        jMenuBar = new javax.swing.JMenuBar();
+        jMenuCadastrar = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem8 = new javax.swing.JMenuItem();
         jMenuItem4 = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
+        jMenuEditar = new javax.swing.JMenu();
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
         jMenuItem7 = new javax.swing.JMenuItem();
         jMenuItem10 = new javax.swing.JMenuItem();
-        jMenu3 = new javax.swing.JMenu();
-        jMenu4 = new javax.swing.JMenu();
+        jMenuRelatorios = new javax.swing.JMenu();
+        jMenuFerramentas = new javax.swing.JMenu();
         jMenuItem9 = new javax.swing.JMenuItem();
-        jMenu5 = new javax.swing.JMenu();
+        jMenuAjuda = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -63,19 +63,19 @@ public class TelaPrincipal extends javax.swing.JFrame {
         AreaPrincipalLayout.setHorizontalGroup(
             AreaPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AreaPrincipalLayout.createSequentialGroup()
-                .addGap(0, 560, Short.MAX_VALUE)
+                .addGap(0, 643, Short.MAX_VALUE)
                 .addComponent(jLabelLogo))
         );
         AreaPrincipalLayout.setVerticalGroup(
             AreaPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, AreaPrincipalLayout.createSequentialGroup()
-                .addGap(0, 266, Short.MAX_VALUE)
+                .addGap(0, 329, Short.MAX_VALUE)
                 .addComponent(jLabelLogo))
         );
 
-        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/cadastro.png"))); // NOI18N
-        jMenu1.setText("Cadastrar");
-        jMenu1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jMenuCadastrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/cadastro.png"))); // NOI18N
+        jMenuCadastrar.setText("Cadastrar");
+        jMenuCadastrar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
 
         jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_D, java.awt.event.InputEvent.CTRL_MASK));
         jMenuItem1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -85,7 +85,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 jMenuItem1ActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem1);
+        jMenuCadastrar.add(jMenuItem1);
 
         jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.SHIFT_MASK));
         jMenuItem2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -95,7 +95,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 jMenuItem2ActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem2);
+        jMenuCadastrar.add(jMenuItem2);
 
         jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_T, java.awt.event.InputEvent.CTRL_MASK));
         jMenuItem3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -105,7 +105,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 jMenuItem3ActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem3);
+        jMenuCadastrar.add(jMenuItem3);
 
         jMenuItem8.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_MASK));
         jMenuItem8.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
@@ -115,58 +115,58 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 jMenuItem8ActionPerformed(evt);
             }
         });
-        jMenu1.add(jMenuItem8);
+        jMenuCadastrar.add(jMenuItem8);
 
         jMenuItem4.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F4, java.awt.event.InputEvent.ALT_MASK));
         jMenuItem4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jMenuItem4.setText("Sair");
-        jMenu1.add(jMenuItem4);
+        jMenuCadastrar.add(jMenuItem4);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar.add(jMenuCadastrar);
 
-        jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/cursos.png"))); // NOI18N
-        jMenu2.setText("Editar");
-        jMenu2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jMenuEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/cursos.png"))); // NOI18N
+        jMenuEditar.setText("Editar");
+        jMenuEditar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
 
         jMenuItem5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jMenuItem5.setText("Editar Docente");
-        jMenu2.add(jMenuItem5);
+        jMenuEditar.add(jMenuItem5);
 
         jMenuItem6.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jMenuItem6.setText("Editar Curso");
-        jMenu2.add(jMenuItem6);
+        jMenuEditar.add(jMenuItem6);
 
         jMenuItem7.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jMenuItem7.setText("Editar Turma");
-        jMenu2.add(jMenuItem7);
+        jMenuEditar.add(jMenuItem7);
 
         jMenuItem10.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jMenuItem10.setText("Editar Cronograma");
-        jMenu2.add(jMenuItem10);
+        jMenuEditar.add(jMenuItem10);
 
-        jMenuBar1.add(jMenu2);
+        jMenuBar.add(jMenuEditar);
 
-        jMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/relatorio.png"))); // NOI18N
-        jMenu3.setText("Relatórios");
-        jMenu3.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jMenuBar1.add(jMenu3);
+        jMenuRelatorios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/relatorio.png"))); // NOI18N
+        jMenuRelatorios.setText("Relatórios");
+        jMenuRelatorios.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jMenuBar.add(jMenuRelatorios);
 
-        jMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/utilitario.png"))); // NOI18N
-        jMenu4.setText("Ferramentas");
-        jMenu4.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jMenuFerramentas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/utilitario.png"))); // NOI18N
+        jMenuFerramentas.setText("Ferramentas");
+        jMenuFerramentas.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
 
         jMenuItem9.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jMenuItem9.setText("Consultar Docentes");
-        jMenu4.add(jMenuItem9);
+        jMenuFerramentas.add(jMenuItem9);
 
-        jMenuBar1.add(jMenu4);
+        jMenuBar.add(jMenuFerramentas);
 
-        jMenu5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/ajuda.png"))); // NOI18N
-        jMenu5.setText("Ajuda");
-        jMenu5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jMenuBar1.add(jMenu5);
+        jMenuAjuda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/ajuda.png"))); // NOI18N
+        jMenuAjuda.setText("Ajuda");
+        jMenuAjuda.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        jMenuBar.add(jMenuAjuda);
 
-        setJMenuBar(jMenuBar1);
+        setJMenuBar(jMenuBar);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -176,12 +176,14 @@ public class TelaPrincipal extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(AreaPrincipal, javax.swing.GroupLayout.Alignment.TRAILING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(AreaPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         bindingGroup.bind();
 
-        setBounds(0, 0, 878, 541);
+        setBounds(0, 0, 961, 583);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
@@ -251,12 +253,11 @@ public class TelaPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane AreaPrincipal;
     private javax.swing.JLabel jLabelLogo;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
-    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenu jMenuAjuda;
+    private javax.swing.JMenuBar jMenuBar;
+    private javax.swing.JMenu jMenuCadastrar;
+    private javax.swing.JMenu jMenuEditar;
+    private javax.swing.JMenu jMenuFerramentas;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem10;
     private javax.swing.JMenuItem jMenuItem2;
@@ -267,6 +268,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JMenuItem jMenuItem9;
+    private javax.swing.JMenu jMenuRelatorios;
     private org.jdesktop.beansbinding.BindingGroup bindingGroup;
     // End of variables declaration//GEN-END:variables
 }
